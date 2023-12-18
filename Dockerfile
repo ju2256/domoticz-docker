@@ -48,6 +48,7 @@ RUN set -ex \
     && mkdir -p /opt/domoticz/userdata \
     && rm -rf /var/lib/apt/lists/* \
     && pip3 install setuptools requests pyserial
+    && pip install vallox-websocket-api
 
 VOLUME /opt/domoticz/userdata
 
